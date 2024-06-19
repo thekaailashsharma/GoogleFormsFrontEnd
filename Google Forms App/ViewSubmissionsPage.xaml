@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:YourNamespace.ViewModels"
+             x:Class="Google_Forms_App.ViewSubmissionsPage"
+             Title="View Submissions"
+             x:DataType="viewModels:ViewSubmissionsViewModel">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <!-- Display submission details -->
+            <Label Text="Name:" FontSize="Medium" />
+            <Label Text="{Binding CurrentSubmission.Name}" FontSize="Medium" FontAttributes="Bold" />
+
+            <Label Text="Email:" FontSize="Medium" />
+            <Label Text="{Binding CurrentSubmission.Email}" FontSize="Medium" FontAttributes="Bold" />
+
+            <Label Text="Phone:" FontSize="Medium" />
+            <Label Text="{Binding CurrentSubmission.Phone}" FontSize="Medium" FontAttributes="Bold" />
+
+            <Label Text="GitHub Link:" FontSize="Medium" />
+            <Label Text="{Binding CurrentSubmission.GitHubLink}" FontSize="Medium" FontAttributes="Bold" />
+
+            <Label Text="Stopwatch Time:" FontSize="Medium" />
+            <Label Text="{Binding CurrentSubmission.StopwatchTime}" FontSize="Medium" FontAttributes="Bold" />
+
+            <!-- Navigation buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="100">
+    <Button Text="Previous"
+            Command="{Binding PreviousCommand}"
+            Margin="0,0,10,0" /> <!-- Right margin of 10 units -->
+
+    <Button Text="Next"
+            Command="{Binding NextCommand}"
+            Margin="10,0,0,0" /> <!-- Left margin of 10 units -->
+</StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

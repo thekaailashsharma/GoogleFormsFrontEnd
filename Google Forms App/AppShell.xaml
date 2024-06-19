@@ -6,10 +6,13 @@
     xmlns:local="clr-namespace:Google_Forms_App"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+   
+    <TabBar>
+        <ShellContent Title="View Submissions"
+                      ContentTemplate="{DataTemplate local:ViewSubmissionsPage}" />
+        <ShellContent Title="Create New Submission"
+                      ContentTemplate="{DataTemplate local:CreateSubmissionPage}" />
+    </TabBar>
 
 </Shell>
 
