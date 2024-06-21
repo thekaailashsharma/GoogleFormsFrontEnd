@@ -1,4 +1,4 @@
-# .NET MAUI Multiplatform Application for Form Submissions
+# Google Forms FrontEnd using .NET
 
 This is a multiplatform desktop application built with .NET MAUI for managing form submissions. The application allows users to view existing submissions, navigate through them using navigation buttons, and create new submissions with various fields. Keyboard shortcuts are implemented for efficient navigation and form submission.
 
